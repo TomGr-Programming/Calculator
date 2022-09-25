@@ -16,7 +16,7 @@ public class UserInteraction {
         double numberOne = scanner.nextDouble();
 
         System.out.println("Enter the second number");
-        double numberTwo = scanner.nextDouble()
+        double numberTwo = scanner.nextDouble();
 
         System.out.println("Choose one of the following operators: +, - , *, /");
         char operator = scanner.next().charAt(0);
@@ -27,15 +27,19 @@ public class UserInteraction {
     private void usersChoice(double numberOne, double numberTwo, char operator) {
         switch(operator) {
             case '+':
-            System.out.println(arithmetic.addition(numberOne, numberTwo));
+                System.out.println(arithmetic.addition(numberOne, numberTwo));
+                break;
             case '-':
-            System.out.println(arithmetic.subtraction(numberOne, numberTwo));
+                System.out.println(arithmetic.subtraction(numberOne, numberTwo));
+                break;
             case '*':
-            System.out.println(arithmetic.multiply(numberOne, numberTwo));
+                System.out.println(arithmetic.multiply(numberOne, numberTwo));
+                break;
             case '/':
-            System.out.println(arithmetic.division(numberOne, numberTwo));
+                System.out.println(arithmetic.division(numberOne, numberTwo));
+                break;
             default:
-            System.out.println("Invalid input operator");
+                System.out.println("Invalid input operator");
         }
     }
     
