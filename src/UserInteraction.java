@@ -25,22 +25,16 @@ public class UserInteraction {
     }
 
     private void usersChoice(double numberOne, double numberTwo, char operator) {
-        switch(operator) {
-            case '+':
-                System.out.println(arithmetic.addition(numberOne, numberTwo));
-                break;
-            case '-':
-                System.out.println(arithmetic.subtraction(numberOne, numberTwo));
-                break;
-            case '*':
-                System.out.println(arithmetic.multiply(numberOne, numberTwo));
-                break;
-            case '/':
-                System.out.println(arithmetic.division(numberOne, numberTwo));
-                break;
-            default:
-                System.out.println("Invalid input operator");
+        if(operator == '+') {
+            System.out.println("Solution: " + arithmetic.addition(numberOne, numberTwo));
+        } else if(operator == '-') {
+            System.out.println("Solution: " + arithmetic.subtraction(numberOne, numberTwo));
+        } else if(operator == '*') {
+            System.out.println("Solution: " + arithmetic.multiply(numberOne, numberTwo));
+        } else if(operator == '/') {
+            System.out.println("Solution: " + arithmetic.division(numberOne, numberTwo));
+        } else {
+            System.out.println("Invalid input operator");
         }
     }
-    
 }
